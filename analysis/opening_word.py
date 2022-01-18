@@ -1,7 +1,7 @@
 import pandas as pd
 import glob
 
-entropy_files = glob.glob("data/opening_word/standardized_entropy/entropy_data_*.csv")
+entropy_files = glob.glob("data/opening_word/entropies/entropy_data_*.csv")
 
 df = pd.concat(
     map(lambda filename: pd.read_csv(filename, header=None), entropy_files),
