@@ -53,8 +53,11 @@ class Constraint:
 
 
 class Game:
-    def __init__(self):
-        self.solution = choice(DICTIONARY)
+    def __init__(self, solution=None):
+        if solution:
+            self.solution = solution
+        else:
+            self.solution = choice(DICTIONARY)
         self.feasible_solutions = DICTIONARY.copy()
         self.guesses_made = 0
         self.seen_constraints = defaultdict(lambda: set())
@@ -114,10 +117,11 @@ class Game:
 
         return list(new_feasible_solutions)
 
-    def play(self, guess: str):
+    def play(self, guess: str) -> Boolean:
         """
         Makes a move, updating the feasible solutions, and tallying a guess.
         """
         self.feasible_solutions = self.peek(guess, self.solution)
-        self.seen_constraints = {}
+        self.seen_constraints = defaultdict(lambda: set())
         self.guesses_made += 1
+        return guess == self.solution
