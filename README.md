@@ -4,7 +4,7 @@ The goal of this repository was to create a program that could play [Wordle](htt
 
 I'm cannot claim that I am amazing at the game, but I certainly can assert that the bot beat me almost every time.
 
-If you want to learn more about the philosophy of the bot, and a higher level of how it works, I wrote a Medium article that you can find here: [TODO].
+If you want to learn more about the philosophy of the bot, and a higher level of how it works, I wrote [a Medium article that you can find here](https://medium.com/@arealguru/shannons-opening-wordle-move-313f5c4821c3).
 
 ## What is Included
 
