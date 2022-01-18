@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 scipy = "*"
+pandas = "*"
+alive-progress = "*"
 
 [dev-packages]
 black = "*"
